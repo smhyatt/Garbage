@@ -1,0 +1,13 @@
+[
+  {"whatg":"newspaper","whereg":"paper"},
+  {"whatg":"magazine","whereg":"paper"},
+  {"whatg":"milk carton","whereg":"food"},
+  {"whatg":"shoe box","whereg":"cardboard"},
+  {"whatg":"can","whereg":"metal"},
+  {"whatg":"book","whereg":"paper"},
+  {"whatg":"aluminium foil","whereg":"metal"},
+  {"whatg":"teddy bears","whereg":"daily waste"},
+  {"whatg":"cables","whereg":"metal"},
+  {"whatg":"cat","whereg":"animal pound"},
+  {"whatg":"coffee","whereg":"food"}
+]

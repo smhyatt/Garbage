@@ -1,0 +1,12 @@
+newspaper, paper
+magazine, paper
+milk carton, food
+shoe box, cardboard
+can, Metal
+book, paper
+aluminium foil (clean), metal
+teddy bears, daily waste
+flower pot (plastic), daily waste
+cables, metal
+cat, animal pound
+coffee, food
