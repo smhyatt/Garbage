@@ -62,7 +62,6 @@ public class ItemsDB {
         if (itemsMap.get(what) != null)  itemsMap.remove(what);
     }
 
-
     // Method for reading a file from the Assets folder and loading its content into a HashMap.
     private void fillItemsDBFromFile(String filename) {
         try {
@@ -79,7 +78,6 @@ public class ItemsDB {
             Log.e(filename, "fillItemsDB: error reading file", e);
         }
     }
-
 
     // Dear TA, I tried to make this work, but I'm having issues with dependencies. In the file
     // build.gradle(:app) I have tried to add the JSON dependency below, but it complains with:
