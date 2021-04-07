@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#767272"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <!--TextView for the header -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/garbage_items" />
+
+    <!-- Text field to enter item -->
+    <EditText
+        android:id="@+id/enter_field"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:importantForAutofill="no"
+        android:hint="@string/enter_name_of_garbage"
+        android:paddingStart="10sp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Text field to place item -->
+    <EditText
+        android:id="@+id/placement_field"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:importantForAutofill="no"
+        android:hint="@string/enter_placement_of_garbage_item"
+        android:paddingStart="10sp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- WHERE button -->
+    <Button
+        android:id="@+id/where_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="start"
+        android:background="@color/colorAccent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/where"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!-- ADD button -->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="start"
+        android:background="@color/colorAccent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/add_garbage_item"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!-- LIST ALL ITEMS button -->
+    <Button
+        android:id="@+id/list_items_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="start"
+        android:background="@color/colorAccent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/list_all_items"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!-- Update local db button -->
+    <Button
+        android:id="@+id/update_local_db_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="start"
+        android:background="@color/colorAccent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/update"
+        android:paddingHorizontal="30dp"
+        />
+
+</LinearLayout>

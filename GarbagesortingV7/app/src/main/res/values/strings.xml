@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Garbage sorting V7</string>
+    <string name="where">Where To Put It?</string>
+    <string name="whereQst">Where?</string>
+    <string name="add_new">ADD A NEW ITEM</string>
+    <string name="enter_name_of_garbage">Enter name of garbage ...</string>
+    <string name="where_to_place_item">Where to place item:</string>
+    <string name="what_item">What item?</string>
+    <string name="add_new_item">ADD NEW ITEM</string>
+    <string name="enter_where_garbage_is_placed">Enter where garbage is to be placed ...</string>
+    <string name="empty_toast">Please type something in the what and where fields</string>
+    <string name="list_all_items">LIST ALL ITEMS</string>
+    <string name="garbage_items">Garbage items:</string>
+    <string name="enter_placement_of_garbage_item">Enter placement of garbage item...</string>
+    <string name="add_garbage_item">ADD GARBAGE ITEM</string>
+    <string name="garbage_garbage_garbage">garbage, garbage, garbage</string>
+    <string name="update">Update</string>
+</resources>
