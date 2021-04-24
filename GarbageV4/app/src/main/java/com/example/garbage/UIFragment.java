@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,8 +15,8 @@ import androidx.fragment.app.Fragment;
 
 public class UIFragment extends Fragment {
     //GUI variables
-    private Button listItems;
-    private TextView newWhat, newWhere;
+    private Button listItems, findItem;
+    private TextView newWhat;
 
     // Model: Database of items
     private static ItemsDB itemsDB;
@@ -33,11 +32,9 @@ public class UIFragment extends Fragment {
         final View v = inflater.inflate(R.layout.fragment_ui, container, false);
 
         //Text Fields
-//        newWhat = v.findViewById(R.id.what_text);
-//        newWhere = v.findViewById(R.id.where_text);
+        newWhat = v.findViewById(R.id.user_input);
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-            // The search button for looking up items
             listItems = v.findViewById(R.id.list_button);
             listItems.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -48,25 +45,19 @@ public class UIFragment extends Fragment {
             });
         };
 
-
-
-
-
-/*        addItem = v.findViewById(R.id.add_button);
-        // adding a new thing
-        addItem.setOnClickListener(new View.OnClickListener() {
+        findItem = v.findViewById(R.id.search_button);
+        findItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String whatS = newWhat.getText().toString().trim();
-                String whereS = newWhere.getText().toString().trim();
-                if ((whatS.length() > 0) && (whereS.length() > 0)) {
-                    itemsDB.addItem(whatS, whereS);
-                    newWhat.setText("");
-                    newWhere.setText("");
+                if (whatS.length() > 0) {
+                    String whereS = itemsDB.getWhere(whatS);
+                    newWhat.setText(whereS);
                 } else
                     Toast.makeText(getActivity(), R.string.empty_toast, Toast.LENGTH_LONG).show();
             }
-        });*/
+        });
+
         return v;
     }
 }
