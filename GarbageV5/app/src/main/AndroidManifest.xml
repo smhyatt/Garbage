@@ -19,6 +19,9 @@
         <activity android:name=".ListActivity"
             android:screenOrientation="sensor">
         </activity>
+        <activity android:name=".ModifyActivity"
+            android:screenOrientation="sensor">
+        </activity>
     </application>
 
 </manifest>

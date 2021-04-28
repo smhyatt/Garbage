@@ -29,7 +29,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"/>
 
-    <!-- Button to list all items-->
+    <!-- Button to search for an item -->
     <Button
         android:id="@+id/search_button"
         android:layout_width="wrap_content"
@@ -42,7 +42,20 @@
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
-    <!-- Button to add an item-->
+    <!-- Button to add an item -->
+    <Button
+        android:id="@+id/add_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_700"
+        android:text="ADD NEW ITEM"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Button to list items -->
     <Button
         android:id="@+id/list_button"
         android:layout_width="wrap_content"

@@ -11,11 +11,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 
 public class UIFragment extends Fragment {
     //GUI variables
-    private Button listItems, findItem;
+    private Button listItems, findItem, addItem;
     private TextView newWhat;
 
     // Model: Database of items
@@ -38,7 +39,7 @@ public class UIFragment extends Fragment {
             listItems = v.findViewById(R.id.list_button);
             listItems.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
+                public void onClick(View v) {
                     Intent intent = new Intent(getActivity(), ListActivity.class);
                     startActivity(intent);
                 }
@@ -48,13 +49,25 @@ public class UIFragment extends Fragment {
         findItem = v.findViewById(R.id.search_button);
         findItem.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 String whatS = newWhat.getText().toString().trim();
                 if (whatS.length() > 0) {
                     String whereS = itemsDB.getWhere(whatS);
                     newWhat.setText(whereS);
                 } else
-                    Toast.makeText(getActivity(), R.string.empty_toast, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(),
+                            R.string.empty_toast,
+                            Toast.LENGTH_LONG).show();
+            }
+        });
+
+        // The add button for instantiating a new Intent, which adds a new item to the database
+        addItem = v.findViewById(R.id.add_page_button);
+        addItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(getActivity(), ModifyActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -5,6 +5,7 @@ import android.util.Log;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,6 +28,14 @@ public class ItemsDB {
     // Setup the database with the initial garbage sorting knowledge
     private ItemsDB(Context context)  {
         fillItemsDBFromFile("garbage.txt");
+    }
+
+    public ArrayList<Item> listAll() {
+        ArrayList<Item> result= new ArrayList<>();
+        for (HashMap.Entry <String, String> item: itemsMap.entrySet()) {
+            result.add(new Item(item.getKey(), item.getValue()));
+        }
+        return result;
     }
 
     public String listItems() {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Garbage Sorting V4</string>
+    <string name="app_name">Garbage Sorting V5</string>
     <string name="heading_create">Add new item</string>
     <string name="what_item">What item? </string>
     <string name="where">Where?</string>

@@ -1,12 +1,35 @@
 newspaper, paper
 magazine, paper
-milk carton, food
+milk carton, food waste
 shoe box, cardboard
-can, Metal
+can, metal
 book, paper
 aluminium foil (clean), metal
 teddy bears, daily waste
 flower pot (plastic), daily waste
 cables, metal
 cat, animal pound
-coffee, food
+coffee, food waste
+shoe, textile
+dress, textile
+glass, glass
+banana, food waste
+apple, food waste
+gum, daily waste
+dog, animal pound
+computer, metal
+battery, batteries
+stone, nature
+TV, devices
+screen, devices
+telephone, devices
+mouse, animal pound
+toy car, metal
+toy doll, plastic
+wooden table, wood work
+plastic table, plastic
+plastic chair, plastic
+cake, food waste
+speakers, devices
+metal spoon, metal
+golden spoon, jewellery

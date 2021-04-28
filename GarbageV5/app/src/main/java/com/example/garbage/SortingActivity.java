@@ -9,10 +9,8 @@ import androidx.fragment.app.FragmentManager;
 
 
 public class SortingActivity extends AppCompatActivity {
-    //Shopping V4 using Fragments and landscape orientation
-
     private FragmentManager fm;
-    Fragment fragmentUI, fragmentList;
+    Fragment fragmentUI, fragmentList, fragmentAdd;
 
     //Model: Database of items
     private static ItemsDB itemsDB;
