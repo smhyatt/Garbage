@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.geoquiznavigation.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFrag_to_loginFrag"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFrag_to_gameFrag"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.geoquiznavigation.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFrag_to_mainFrag"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.geoquiznavigation.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFrag_to_resultFrag"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/mainFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.geoquiznavigation.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+
+</navigation>

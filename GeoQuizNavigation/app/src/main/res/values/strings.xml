@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GeoQuizNavigation</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="start_game">Start A Game</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="play_again">Play Again</string>
+    <string name="win_msg">Congratulations! You won this game :)</string>
+    <string name="lose_msg">Sorry! You had some mistakes and lost the game :(</string>
+    <string name="your_name">Your Name</string>
+    <string name="register">Register</string>
+    <string name="hey_player">Hey Player</string>
+    <string name="result">Result</string>
+</resources>
