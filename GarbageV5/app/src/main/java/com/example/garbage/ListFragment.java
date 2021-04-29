@@ -73,7 +73,7 @@ public class ListFragment extends Fragment implements Observer {
 
         @Override
         public void onBindViewHolder(ItemHolder holder, int position) {
-            Item item=  itemsDB.listAll().get(position);
+            Item item=  localDB.get(position);
             holder.bind(item, position);
         }
 
