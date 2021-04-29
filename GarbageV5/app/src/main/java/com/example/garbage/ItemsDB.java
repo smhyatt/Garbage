@@ -7,11 +7,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Observable;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
 
-public class ItemsDB {
+public class ItemsDB extends Observable {
     private static ItemsDB sItemsDB;
     private static Context sContext;
     private final HashMap<String, String> itemsMap= new HashMap<String, String>();
@@ -38,12 +40,6 @@ public class ItemsDB {
         return result;
     }
 
-    public String listItems() {
-        String r= "";
-        for (HashMap.Entry <String, String> item: itemsMap.entrySet())
-            r= r+"\n Buy "+item.getKey() + " in: "  + item.getValue();
-        return r;
-    }
 
     // A property for getting the database
     public HashMap<String, String> getItemsDB() {
@@ -67,6 +63,7 @@ public class ItemsDB {
     // Method for adding a new item to the database
     public void addItem(String what, String where){
         itemsMap.put(what, where);
+        this.setChanged(); notifyObservers();
     }
 
 

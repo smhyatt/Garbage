@@ -10,14 +10,27 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ListFragment extends Fragment {
+import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
+
+public class ListFragment extends Fragment implements Observer {
     private static ItemsDB itemsDB;
     private RecyclerView itemList;
     private ItemAdapter mAdapter;
-    //private TextView listThings;
+    private ArrayList<Item> localDB;
+
+    public void update(Observable observable, Object data) {
+        localDB = itemsDB.listAll();
+        mAdapter.notifyDataSetChanged();
+    }
+
+
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         itemsDB= ItemsDB.get(getActivity());
+        itemsDB.addObserver(this);
+        localDB= itemsDB.listAll();
     }
 
 
