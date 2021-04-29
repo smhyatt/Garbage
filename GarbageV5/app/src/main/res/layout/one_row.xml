@@ -10,19 +10,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/item_no"
         android:layout_weight="1.5"
-        android:textSize="@dimen/text_size"/>
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/item_what"
         android:layout_weight="1"
-        android:textSize="@dimen/text_size"/>
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/item_where"
         android:layout_weight="1"
-        android:textSize="@dimen/text_size"/>
+        android:textSize="18sp"/>
 </LinearLayout>

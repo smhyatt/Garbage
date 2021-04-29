@@ -42,7 +42,7 @@ public class ListFragment extends Fragment {
         }
 
         public void bind(Item item, int position){
-            mNoView.setText(" "+position+" ");
+            mNoView.setText("    " + (position+1) + " ");
             mWhatTextView.setText(item.getWhat());
             mWhereTextView.setText(item.getWhere());
         }
