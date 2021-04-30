@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Garbage Sorting V6</string>
+    <string name="what_item">Type item  </string>
+    <string name="where_item">Type placement  </string>
+    <string name="add_item">Add new item</string>
+    <string name="where">WHERE</string>
+    <string name="add">ADD A NEW ITEM</string>
+    <string name="list">LIST ALL ITEMS</string>
+    <string name="delete">DELETE ITEM</string>
+    <string name="empty_toast">Please type something in the what and where fields</string>
+    <string name="added_toast">The item has been added</string>
+    <string name="exist_toast">The item already exists in the sorting collection</string>
+    <string name="not_item">Type in the item you want to remove</string>
+</resources>
