@@ -67,17 +67,31 @@ public class ItemsDB extends Observable {
     }
 
 
+    public void addHelper(String what, String where){
+        Item newItem= new Item(what, where);
+        ContentValues values= getContentValues(newItem);
+        mDatabase.insert(ItemsDbSchema.ItemTable.NAME, null, values);
+        this.setChanged(); notifyObservers();
+    }
+
+
     public int addItem(String what, String where){
+        String whereInDB = getWhere(what);
+
+        // null result, thus it doesn't exist already
+        if (whereInDB == null) {
+            addHelper(what, where);
+            return 1;
+        }
+
         // a complete duplicate, so do nothing
-        if (getWhere(what).trim().equals(where.trim())) {
+        else if (whereInDB.trim().equals(where.trim())) {
             return 0;
         }
-        // otherwise, there is a different where or it does not exist
+
+        // otherwise, there is a different where
         else {
-            Item newItem= new Item(what, where);
-            ContentValues values= getContentValues(newItem);
-            mDatabase.insert(ItemsDbSchema.ItemTable.NAME, null, values);
-            this.setChanged(); notifyObservers();
+            addHelper(what, where);
             return 1;
         }
     }
@@ -124,26 +138,10 @@ public class ItemsDB extends Observable {
             while (line != null) {
                 String[] gItem = line.split(",");
                 addItem(gItem[0], gItem[1]);
-                //itemsMap.put(gItem[0], gItem[1]);
                 line = reader.readLine();
             }
         } catch (IOException e) {
             Log.e(filename, "fillItemsDB: error reading file", e);
         }
     }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
