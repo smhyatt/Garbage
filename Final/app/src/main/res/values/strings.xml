@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shop N Share</string>
+    <string name="what_item">Type list  </string>
+    <string name="where_item">Type placement  </string>
+    <string name="add_item">Add new list</string>
+    <string name="where">WHERE</string>
+    <string name="create">Create a new list</string>
+    <string name="list">Show all lists</string>
+    <string name="delete">DELETE ITEM</string>
+    <string name="empty_toast">Please type something in the what and where fields</string>
+    <string name="added_toast">The list has been added</string>
+    <string name="exist_toast">The list already exists in the sorting collection</string>
+    <string name="not_item">Type in the list you want to remove</string>
+    <string name="add_hint"><font size="35"></font>name of list</string>
+</resources>

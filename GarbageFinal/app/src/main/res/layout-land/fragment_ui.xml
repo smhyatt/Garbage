@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#767272"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <!-- TextView to show all items -->
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="10dp"
+        android:text="Where to place item:"/>
+
+    <!-- Text field to enter item -->
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:textColor="@android:color/white"
+        android:inputType="text"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Button to search for an item -->
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_700"
+        android:text="@string/where"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Button to add an item -->
+    <Button
+        android:id="@+id/add_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_700"
+        android:text="@string/add"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Button to delete items-->
+    <Button
+        android:id="@+id/delete_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_700"
+        android:text="@string/delete"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Button to list items -->
+    <Button
+        android:id="@+id/list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_700"
+        android:text="@string/list"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+

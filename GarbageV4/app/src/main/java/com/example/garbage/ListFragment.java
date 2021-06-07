@@ -18,7 +18,7 @@ public class ListFragment extends Fragment {
 
     @Override public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View v= inflater.inflate(R.layout.fragment_list, container, false);
-        listThings= v.findViewById(R.id.listItems);
+        listThings= (TextView) v.findViewById(R.id.listItems);
         listThings.setText("Garbage Sorting List"+itemsDB.listItems());
         return v;
     }

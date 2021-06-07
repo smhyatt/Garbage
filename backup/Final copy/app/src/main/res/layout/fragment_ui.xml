@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/colourful"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <!-- Button to add an list -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450px"
+        android:layout_marginBottom="150px"
+        android:text="Shop n Share"
+        android:textColor="#d3d8e3"
+        android:textSize="120px" />
+
+    <Button
+        android:id="@+id/add_page_button"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="#DD42A5F5"
+        android:text="@string/create"
+        android:textColor="#d3d8e3"
+        android:textSize="18sp" />
+
+    <!-- Button to delete lists-->
+<!--    <Button
+        android:id="@+id/delete_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_700"
+        android:text="@string/delete"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />-->
+
+    <!-- Button to list lists -->
+    <Button
+        android:id="@+id/list_button"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="#DDBB3C5C"
+        android:text="@string/list"
+        android:textColor="#d3d8e3"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+

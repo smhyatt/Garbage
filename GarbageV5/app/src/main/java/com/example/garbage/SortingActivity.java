@@ -26,11 +26,11 @@ public class SortingActivity extends AppCompatActivity {
 
     private void setUpFragments() {
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            fragmentUI= fm.findFragmentById(R.id.container_ui_landscape);
-            fragmentList= fm.findFragmentById(R.id.container_list);
+            fragmentUI = fm.findFragmentById(R.id.container_ui_landscape);
+            fragmentList = fm.findFragmentById(R.id.container_list);
             if ((fragmentUI == null) && (fragmentList == null)) {
-                fragmentUI= new UIFragment();
-                fragmentList= new ListFragment();
+                fragmentUI = new UIFragment();
+                fragmentList = new ListFragment();
                 fm.beginTransaction()
                         .add(R.id.container_ui_landscape, fragmentUI)
                         .add(R.id.container_list, fragmentList)
@@ -38,8 +38,8 @@ public class SortingActivity extends AppCompatActivity {
             }
         } else {
             //Orientation portrait
-            fragmentUI= fm.findFragmentById(R.id.container_ui_portrait);
-            if (fragmentUI== null) {
+            fragmentUI = fm.findFragmentById(R.id.container_ui_portrait);
+            if (fragmentUI == null) {
                 fragmentUI = new UIFragment();
                 fm.beginTransaction()
                         .add(R.id.container_ui_portrait, fragmentUI)

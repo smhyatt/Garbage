@@ -8,7 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ModifyActivity extends  AppCompatActivity {
+public class ModifyActivity extends AppCompatActivity {
 
     //GUI variables
     private Button addItem;
